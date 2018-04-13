@@ -3,12 +3,12 @@
 之前：  
 
 - UIView添加事件  
-```object-c
->-(void)xxx {  
->    view.userInteractionEnabled = YES;  
->    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doSomething:)];  
->    [view addGestureRecognizer:tapGesture];  
->}  
+```Objective-C 
+-(void)xxx {  
+    view.userInteractionEnabled = YES;  
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doSomething:)];  
+    [view addGestureRecognizer:tapGesture];  
+}  
 
 -(void)doSomething {
     ...
