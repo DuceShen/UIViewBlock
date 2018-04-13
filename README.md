@@ -1,37 +1,39 @@
 # UIViewBlock
 # 使用后效果
-之前：
-UIView添加事件
-- (void)xxx {
-    view.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doSomething:)];
-    [view addGestureRecognizer:tapGesture];
-}
-- (void)doSomething {
-    ...
-}
+之前：  
 
-UIButton添加事件
-- (void)xxx {
-    [btn addTarget:self action:@selector(doSomething:) forControlEvents:UIControlEventTouchUpInside];
-}
-- (void)doSomething {
-    ...
-}
+- UIView添加事件  
+>-(void)xxx {  
+>    view.userInteractionEnabled = YES;  
+>    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doSomething:)];  
+>    [view addGestureRecognizer:tapGesture];  
+>}  
+ >-(void)doSomething {
+ >   ...
+>}
 
-使用后：
-UIVIew添加事件
-- (void)xxx {
-    [view addTap:^(UITapGestureRecognizer *tap) {
-        ...
-    }];
-}
-UIButton添加事件
-- (void)xxx {
-    [btn addTap:^(UIButton *btn) {
-        ...
-    }];
-}
+- UIButton添加事件
+>-(void)xxx {
+>    [btn addTarget:self action:@selector(doSomething:) forControlEvents:UIControlEventTouchUpInside];
+>}
+>-(void)doSomething {
+>    ...
+>}
+
+使用后：  
+
+- UIVIew添加事件
+>-(void)xxx {
+>    [view addTap:^(UITapGestureRecognizer *tap) {
+>        ...
+>    }];
+>}
+- UIButton添加事件
+>-(void)xxx {  
+>    [btn addTap:^(UIButton *btn) {  
+>        ...  
+>    }];  
+>}
 # 使用方法
 直接拖入工程即可
 # 使用建议
