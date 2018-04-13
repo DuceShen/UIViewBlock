@@ -15,28 +15,33 @@
 }
 ```
 - UIButton添加事件
->-(void)xxx {  
->    [btn addTarget:self action:@selector(doSomething:) forControlEvents:UIControlEventTouchUpInside];  
->}  
+```Objective-C
+-(void)xxx {  
+    [btn addTarget:self action:@selector(doSomething:)forControlEvents:UIControlEventTouchUpInside];  
+}  
 
->-(void)doSomething {  
->    ...  
->}
-
+-(void)doSomething {  
+    ...  
+}
+```
 使用后：  
 
 - UIVIew添加事件
+```Objective-C
 >-(void)xxx {  
 >    [view addTap:^(UITapGestureRecognizer *tap) {  
 >        ...  
 >    }];  
 >}
+```
 - UIButton添加事件
->-(void)xxx {  
->    [btn addTap:^(UIButton *btn) {  
->        ...  
->    }];  
->}
+```Objective-C
+-(void)xxx {  
+    [btn addTap:^(UIButton *btn) {  
+        ...  
+    }];  
+}
+```
 # 使用方法
 直接拖入工程即可
 # 使用建议
@@ -75,11 +80,13 @@
 
 宏可放入.pch或Global.h等文件, 并且宏配合xcode自动完成效果更佳。  
 宏搭配使用效果：  
->-(void)xxx {  
+```Objective-C
+-(void)xxx {  
     @weakify(self)  
     [btn addTap:^(UIButton *btn) {  
         @strongify(self)  
         ...  
     }];  
 } 
+```
 
