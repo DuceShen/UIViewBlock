@@ -70,8 +70,9 @@
 #endif  
 #endif  
 #endif  
+
 宏可放入.pch或Global.h等文件, 并且宏配合xcode自动完成效果更佳。  
-宏搭配使用效果  
+宏搭配使用效果：  
 >-(void)xxx {  
     @weakify(self)  
     [btn addTap:^(UIButton *btn) {  
