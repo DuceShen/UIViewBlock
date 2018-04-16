@@ -5,7 +5,11 @@ Pod::Spec.new do |s|
   s.name         = "UIViewBlock"
   s.version      = "1.0.3"
   s.ios.deployment_target = '9.0'
-  s.summary      = "A short description of UIViewBlock."
+  s.summary      = "Categorys of UIView, UIButton."
+
+  s.description  = <<-DESC
+                     给UIView，UIButton各增加了一个带block的方法，便于添加点击事件。
+                   DESC
 
   s.homepage     = "https://github.com/DuceShen/UIViewBlock"
 
