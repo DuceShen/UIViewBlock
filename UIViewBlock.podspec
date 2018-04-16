@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "DuceShen" => "duce.zju@gmail.com" }
 
-  s.source       = { :git => "https://github.com/DuceShen/UIViewBlock.git", :tag => v#{s.version} }
+  s.source       = { :git => "https://github.com/DuceShen/UIViewBlock.git", :tag => "v#{s.version}" }
 
   s.source_files = 'UIViewBlock/*.{h,m}'
 
