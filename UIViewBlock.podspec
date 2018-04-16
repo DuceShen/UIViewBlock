@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UIViewBlock"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.ios.deployment_target = '9.0'
   s.summary      = "A short description of UIViewBlock."
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "DuceShen" => "duce.zju@gmail.com" }
 
-  s.source       = { :git => "https://github.com/DuceShen/UIViewBlock.git", :tag => s.version }
+s.source       = { :git => "https://github.com/DuceShen/UIViewBlock.git", :tag => v#{s.version} }
 
   s.source_files = "UIViewBlock/*.{h,m}"
 
