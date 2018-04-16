@@ -1,6 +1,6 @@
 # UIViewBlock
-# 使用后效果
-之前：  
+# 使用效果
+使用前：  
 
 - UIView添加事件  
 ```Objective-C 
@@ -28,11 +28,11 @@
 
 - UIVIew添加事件
 ```Objective-C
->-(void)xxx {  
->    [view addTap:^(UITapGestureRecognizer *tap) {  
->        ...  
->    }];  
->}
+-(void)xxx {  
+    [view addTap:^(UITapGestureRecognizer *tap) {  
+        ...  
+    }];  
+}
 ```
 - UIButton添加事件
 ```Objective-C
@@ -43,7 +43,7 @@
 }
 ```
 # 使用方法
-直接拖入工程即可
+直接拖入工程，或用cocoaPod导入
 # 使用建议
 建议配合以下两个宏使用(借鉴自yykit)，防止循环引用  
 
